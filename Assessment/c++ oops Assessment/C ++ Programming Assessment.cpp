@@ -6,28 +6,25 @@ using namespace std;
 int main()
 {
 	
+	//deta mamber.....
 
 	char yn;
 	int choice;
 	int ch1,q,ch2,ch3,ch4,ch5;
 	
-	char pizza1[]="Margarita Pizza",pizza2[]="Creamy Max Pizza",pizza3[]="Peri Peri Pizza ";
-	char bur1[]="Veg. Burger" ,bur2[]="CrunChy Veg. Burger",bur3[]="Day-Night special Burger";
-	char send1[]="Club Sandwich",send2[]="Veg. Crispy Sandwich",send3[]="Extream Veg. Sandwich";
-	char roll1[]="Manchurian Roll",roll2[]="Paneer Tikka Roll",roll3[]="Kathi Roll";
-	char bir1[]="Hyderabadi Biryani" ,bir2[]="Kashmiri Biryani" ,bir3[]="Veg. Biryani";
 	   
 		cout<<"------------------------  Day-Night Fast food  ------------------------"<<endl<<endl; 
 			string A;
-			cout<<"Plese Enter Your Name: ";
+			cout<<"Plese Enter Your Name: ";		//user input...
 			cin>>A;
-			cout<<"Hello "<<A;
+			cout<<"Hello "<<A;		//print user name....
 		
 		
 		cout<<endl<<endl<<"What would you like to order ?"<<endl<<endl;
 		
 		
-		
+				//menu of day night Fast food......
+				   
 			cout<<endl<<"              ---------------------- Menu ----------------------"<<endl;
 			cout<<"1) Pizzas"<<endl;
 			cout<<"2) Burgers"<<endl;
@@ -35,218 +32,235 @@ int main()
 			cout<<"4) Rolls"<<endl;
 			cout<<"5) Biryani"<<endl;
 			
-		
+					//user input her choice........
 	  		cout<<endl<<"Plese Enter Your Choice: ";
 			cin>>choice;
 	
 
 	
-		
+				//pizza section.................
+				
 		if(choice == 1)
 		{
 			cout<<endl<<"1  Margarita Pizza Regular Size Rs.150 "<<endl;
 			cout<<"2  Creamy Max Pizza Regular Size Rs.500  "<<endl;
 			cout<<"3  Peri Peri Pizza Regular Size Rs.350  "<<endl<<endl;	
 			
-			
+				//enter pizza would you like........
 			cout<<"Please Enter which Pizza you would like to have?: ";
 			cin>>ch1;
-			
+				//enter pizza Quantity....
 			cout<<endl<<"Please Enter Quantity: ";
             cin>>q;
             
             system("CLS");
-			switch(ch1)
-			{
-				 case 1:
+            
+            //print billl............
+            
+		if(ch1==1)
+		{
              cout<<endl<<"           --------Your Order---------           "<<endl;
-             cout<<""<<q<<" "<<pizza1<<endl;
+             cout<<""<<q<<" Margarita Pizza"<<endl;
              cout<<"Your Total Bill is  "<<q*150<<endl;
              cout<<"Your Order Will be delivered in 40 Minutes"<<endl;
              cout<<"Thank you For Ordering From Day-Night Fast food..........."<<endl<<endl;
-				break;
-				case 2:
+			
+		}
+		if(ch1==2)
+		{
              cout<<"           --------Your Order---------           "<<endl;
-             cout<<" "<<q<<" "<<pizza2<<endl;
+             cout<<" "<<q<<" Creamy Max Pizza"<<endl;
              cout<<"Your Total Bill is  "<<q*500<<endl;
              cout<<"Your Order Will be delivered in 40 Minutes"<<endl;
              cout<<"Thank you For Ordering From Day-Night Fast food..........."<<endl<<endl;
-				break;
-				case 3:
+			
+		}
+		if(ch1==3)
+		{
              cout<<"           --------Your Order---------           "<<endl;
-             cout<<""<<q<<" "<<pizza3<<endl;
+             cout<<""<<q<<" Peri Peri Pizza"<<endl;
              cout<<"Your Total Bill is  "<<q*350<<endl;
              cout<<"Your Order Will be delivered in 40 Minutes"<<endl;
              cout<<"Thank you For Ordering From Day-Night Fast food..........."<<endl<<endl;
-			 	break;
-			
-			}
+		
+		}
 			
 			
 		}
 		
 		
-		
+			//burger section............
 		if(choice == 2)
 		{
 			cout<<endl<<"1  Veg. Burger Rs.70 "<<endl;
 			cout<<"2  CrunChy Veg Burger Rs.100  "<<endl;
 			cout<<"3  Day-Night special Burger Rs.120  "<<endl<<endl;	
 			
-			
+			//enter a number what would you  like.....
 			cout<<"Please Enter which Burger you would like to have?: ";
 			cin>>ch2;
-			
+			//enter Quantity...
 			cout<<endl<<"Please Enter Quantity: ";
             cin>>q;
             
             system("CLS");
-			switch(ch2)
+            
+            //billing section....
+            
+            
+		if(ch2==1)
 			{
-				 case 1:
              cout<<endl<<"           --------Your Order---------           "<<endl;
-             cout<<""<<q<<" "<<bur1<<endl;
+             cout<<""<<q<<" Veg. Burger"<<endl;
              cout<<"Your Total Bill is  "<<q*70<<endl;
              cout<<"Your Order Will be delivered in 40 Minutes"<<endl;
              cout<<"Thank you For Ordering From Day-Night Fast food..........."<<endl<<endl;
-				break;
-				case 2:
+			}
+		if(ch2==2)
+			{
              cout<<"           --------Your Order---------           "<<endl;
-             cout<<" "<<q<<" "<<bur2<<endl;
+             cout<<" "<<q<<" CrunChy Veg Burger"<<endl;
              cout<<"Your Total Bill is  "<<q*100<<endl;
              cout<<"Your Order Will be delivered in 40 Minutes"<<endl;
              cout<<"Thank you For Ordering From Day-Night Fast food..........."<<endl<<endl;
-				break;
-				case 3:
+			}
+		if(ch2==3)
+			{
              cout<<"           --------Your Order---------           "<<endl;
-             cout<<""<<q<<" "<<bur3<<endl;
+             cout<<""<<q<<" Day-Night special Burger"<<endl;
              cout<<"Your Total Bill is  "<<q*120<<endl;
              cout<<"Your Order Will be delivered in 40 Minutes"<<endl;
-             cout<<"Thank you For Ordering From Day-Night Fast food..........."<<endl<<endl;
-			 	break;
-			
+             cout<<"Thank you For Ordering From Day-Night Fast food..........."<<endl<<endl;	
 			}
 
 		}
+		
+		//sandwich section.............
 	if(choice == 3)
 		{
 			cout<<endl<<"1  Club Sandwich Rs.200 "<<endl;
 			cout<<"2  Veg. Crispy Sandwich Size Rs.160  "<<endl;
 			cout<<"3  Extream Veg. Sandwich Size Rs.100  "<<endl<<endl;	
 			
-			
+			//enter which sendwich would you like..............
 			cout<<"Please Enter which Pizza you would like to have?: ";
 			cin>>ch3;
-			
+			//enter Quantity................
 			cout<<endl<<"Please Enter Quantity: ";
             cin>>q;
-            
+            //billing section............
             system("CLS");
-			switch(ch3)
+			if(ch3==1)
 			{
-				 case 1:
              cout<<endl<<"           --------Your Order---------           "<<endl;
-             cout<<""<<q<<" "<<send1<<endl;
+             cout<<""<<q<<" Club Sandwich"<<endl;
              cout<<"Your Total Bill is  "<<q*200<<endl;
              cout<<"Your Order Will be delivered in 40 Minutes"<<endl;
              cout<<"Thank you For Ordering From Day-Night Fast food..........."<<endl<<endl;
-				break;
-				case 2:
+			}
+			if(ch3==2)
+			{
              cout<<"           --------Your Order---------           "<<endl;
-             cout<<" "<<q<<" "<<send2<<endl;
+             cout<<" "<<q<<" Veg. Crispy Sandwich"<<endl;
              cout<<"Your Total Bill is  "<<q*160<<endl;
              cout<<"Your Order Will be delivered in 40 Minutes"<<endl;
              cout<<"Thank you For Ordering From Day-Night Fast food..........."<<endl<<endl;
-				break;
-				case 3:
+         	}
+			if(ch3==3)
+			{
              cout<<"           --------Your Order---------           "<<endl;
-             cout<<""<<q<<" "<<send3<<endl;
+             cout<<""<<" Extream Veg. Sandwich"<<endl;
              cout<<"Your Total Bill is  "<<q*100<<endl;
              cout<<"Your Order Will be delivered in 40 Minutes"<<endl;
              cout<<"Thank you For Ordering From Day-Night Fast food..........."<<endl<<endl;
-			 	break;
 			
 			}
 
 		}
+		
+		//roll section................
 		if(choice == 4)
 		{
 			cout<<endl<<"1  Manchurian Roll Rs.100 "<<endl;
 			cout<<"2  Paneer Tikka Roll Rs.150  "<<endl;
 			cout<<"3  Kathi Roll Rs.120  "<<endl<<endl;	
 			
-			
+			//wich roll you like.............
 			cout<<"Please Enter which Pizza you would like to have?: ";
 			cin>>ch4;
-			
+			//enter Quantity...............
 			cout<<endl<<"Please Enter Quantity: ";
             cin>>q;
-            
+            //biling section..............
             system("CLS");
-			switch(ch4)
+			if(ch4==1)
 			{
-				 case 1:
              cout<<endl<<"           --------Your Order---------           "<<endl;
-             cout<<""<<q<<" "<<roll1<<endl;
+             cout<<""<<q<<" Manchurian Roll"<<endl;
              cout<<"Your Total Bill is  "<<q*100<<endl;
              cout<<"Your Order Will be delivered in 40 Minutes"<<endl;
              cout<<"Thank you For Ordering From Day-Night Fast food..........."<<endl<<endl;
-				break;
-				case 2:
+			}
+			if(ch4==2)
+			{
              cout<<"           --------Your Order---------           "<<endl;
-             cout<<" "<<q<<" "<<roll2<<endl;
+             cout<<" "<<q<<" Paneer Tikka Roll"<<endl;
              cout<<"Your Total Bill is  "<<q*150<<endl;
              cout<<"Your Order Will be delivered in 40 Minutes"<<endl;
              cout<<"Thank you For Ordering From Day-Night Fast food..........."<<endl<<endl;
-				break;
-				case 3:
+			}
+			if(ch4==3)
+			{
              cout<<"           --------Your Order---------           "<<endl;
-             cout<<""<<q<<" "<<roll3<<endl;
+             cout<<""<<q<<" Kathi Roll"<<endl;
              cout<<"Your Total Bill is  "<<q*120<<endl;
              cout<<"Your Order Will be delivered in 40 Minutes"<<endl;
              cout<<"Thank you For Ordering From Day-Night Fast food..........."<<endl<<endl;
-			 	break;
 			
 			}
 
 		}
+		
+		//biryani section............
 			if(choice == 5)
 		{
 			cout<<endl<<"1  Hyderabadi Biryani Rs.350 "<<endl;
 			cout<<"2  Kashmiri Biryani Rs.300  "<<endl;
 			cout<<"3  Veg. Biryani Rs.100  "<<endl<<endl;	
 			
-			
-			cout<<"Please Enter which Pizza you would like to have?: ";
+			//enter number wich would you like...............
+			cout<<"Please Enter which Biryani you would like to have?: ";
 			cin>>ch5;
-			
+			//enter your Quantity.................
 			cout<<endl<<"Please Enter Quantity: ";
             cin>>q;
-            
+            //biling section.........
             system("CLS");
-			switch(ch5)
+			if(ch5=1)
 			{
-				 case 1:
+				
              cout<<endl<<"           --------Your Order---------           "<<endl;
              cout<<""<<q<<" "<<bir1<<endl;
              cout<<"Your Total Bill is  "<<q*350<<endl;
              cout<<"Your Order Will be delivered in 40 Minutes"<<endl;
              cout<<"Thank you For Ordering From Day-Night Fast food..........."<<endl<<endl;
-				break;
-				case 2:
+			}
+			if(ch5==2)
+			{
              cout<<"           --------Your Order---------           "<<endl;
              cout<<" "<<q<<" "<<bir2<<endl;
              cout<<"Your Total Bill is  "<<q*300<<endl;
              cout<<"Your Order Will be delivered in 40 Minutes"<<endl;
              cout<<"Thank you For Ordering From Day-Night Fast food..........."<<endl<<endl;
-				break;
-				case 3:
+			}
+			if(ch5==3)
+			{
              cout<<"           --------Your Order---------           "<<endl;
              cout<<""<<q<<" "<<bir3<<endl;
              cout<<"Your Total Bill is  "<<q*100<<endl;
              cout<<"Your Order Will be delivered in 40 Minutes"<<endl;
              cout<<"Thank you For Ordering From Day-Night Fast food..........."<<endl<<endl;
-			 	break;
+			 	
 			
 			}
 
