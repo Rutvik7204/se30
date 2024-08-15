@@ -1,0 +1,64 @@
+nav{
+    background-color:rgba(18, 199, 219, 0.789);
+    text-align: center;
+}
+.main{
+    background-color: aqua;
+}
+h4{
+    color: brown;
+ 
+}
+.text{
+    text-align: right;
+    color: rgba(35, 15, 180, 0.822);
+    padding-right:15px ;
+    font-weight: 800;    
+}
+.mainpart1{
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+}
+
+input{
+    border: 1.7px solid rgba(35, 15, 180, 0.822);
+}
+
+.my1{
+    display: flex ;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.part1{
+    
+    color: rgba(35, 15, 180, 0.822);
+    font-weight: 800;
+    display: flex;
+    justify-content: right;
+    padding-right: 15px;
+}
+.select1{
+    display: flex;
+    justify-content: left;
+}
+.my2{
+    display: flex ;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.footter{
+    color: rgba(35, 15, 180, 0.822);
+    padding-left:15px ;
+}
+button{
+    position: relative;
+    left: 46%;
+    background-color:rgba(18, 199, 219, 0.789); 
+    color: white;
+    
+}
+.btn1{
+    margin-top: 13px;
+    margin-right: 20px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic pseudo class</title>
+    <style>
+  p::selection{
+    background-color    : aqua;
+}
+ol li:first-child{
+    background-color: aquamarine;
+}
+ol li:last-child{
+    background-color: aquamarine;
+}
+ol li:nth-child(2){
+    background-color: red;
+}
+ol li::first-letter{
+    background-color:pink;
+}
+p:hover{
+    background-color:black;
+    color: white;
+}
+p{
+    transition: 1s;
+}
+    </style>
+</head>
+<body>
+    
+  <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+      </ol>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sint dolores, quam dolor quasi, a assumenda magni voluptatem vero repellendus sit corporis cum labore mollitia sapiente dolorum impedit obcaecati ea.</p>
+</body>
+</html>
